@@ -46,18 +46,11 @@
   .banner_content .content .description {
     margin-top: 20px;
     font-size: 14px;
-    color: #333333;
     line-height: 22px;
   }
   .banner_content .content input {
     height: 44px;
     flex: 8;
-  }
-  .banner_img .dashboard_img {
-    padding: 10px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(255, 49, 88, 0.3);
   }
   .banner_img .quick_details {
     display: none;

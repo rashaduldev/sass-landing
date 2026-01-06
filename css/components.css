@@ -24,12 +24,11 @@ nav ul li{
     list-style:none;
 }
 nav ul li a{
-    /* color:#FF3158; */
-    color: #222222;
+    color: var(--secondary-text-color);
     text-decoration:none;
 }
 nav ul li a:hover{
-    color:#FF3158;
+    color:var(--primary-color);
 }
 .nav_btn{
     display:flex;
@@ -63,7 +62,7 @@ nav ul li a:hover{
 .banner_content .content .description{
     margin-top:20px;
     font-size:14px;
-    color:#333333;
+    color:var(--secondary-text-color);
     line-height:22px;
 }
 .banner_content .content h1 span{
@@ -97,18 +96,18 @@ nav ul li a:hover{
     margin:0;
     white-space:nowrap;
     font-size:14px;
-    color:#555555;
+    color:var(--secondary-text-color);
 }
 .otherwise .left,
 .otherwise .right
 {
    height:1px;
-   background-color:#CECECE;
+   background-color:var(--border-primary);
    width:100%;
 }
 .google_login{
     width:100%;
-    border:1px solid #CECECE 
+    border:1px solid var(--border-primary);
 }
 .banner_img{
     border-radius:8px;
@@ -122,7 +121,7 @@ nav ul li a:hover{
     padding:10px;
     background-color:white;
     border-radius:8px;
-    box-shadow:0 0 8px rgba(255,49,88,0.3);
+    box-shadow:0 0 8px var(--shadow);
 }
 .banner_img .quick_details{
     position:absolute;

@@ -3,9 +3,16 @@
     padding:0;
     box-sizing:border-box;
 }
-/* html, body {
-    overflow: hidden;
-} */
+
+:root{
+    --primary-color:#FF3158;
+    --primary-text-color:white;
+    --secondary-text-color:#222222;
+    --border-primary:#CECECE;
+    --shadow:rgba(255,49,88,0.3);
+}
+
+
 a{
     text-decoration:none;
 }
