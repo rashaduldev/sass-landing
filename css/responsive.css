@@ -1,0 +1,68 @@
+/* mobile responsive : up 600px */
+@media (max-width: 600px) {
+  .container {
+    max-width: 1220px;
+    padding: 0 16px;
+  }
+  .brand_logo img {
+    width: 100px;
+    height: 20px;
+  }
+  nav ul {
+    display: none;
+  }
+.hamburger {
+    display: flex;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+  }
+  .hamburger .top,
+  .hamburger .middle,
+  .hamburger .bottom{
+    height:2px;
+    background-color:black;
+    width:30px;
+  }
+  .nav_btn {
+    display: none;
+  }
+  .banner {
+    padding: 140px 0px 80px 0px;
+  }
+  .banner_content {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner_content .content {
+    flex: 1 1 0%;
+    width: 100%;
+  }
+  .banner_content .content h1 {
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 200;
+  }
+  .banner_content .content .description {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 22px;
+  }
+  .banner_content .content input {
+    height: 44px;
+    flex: 8;
+  }
+  .banner_img .dashboard_img {
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(255, 49, 88, 0.3);
+  }
+  .banner_img .quick_details {
+    display: none;
+  }
+  .banner_img .new_order {
+    display: none;
+  }
+}

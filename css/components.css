@@ -17,6 +17,9 @@ nav ul{
     align-items:center;
     gap:16px;
 }
+.hamburger{
+    display:none;
+}
 nav ul li{
     list-style:none;
 }
@@ -39,6 +42,7 @@ nav ul li a:hover{
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
+    overflow:hidden;
 }
 .banner_content{
     display:flex;
@@ -107,12 +111,14 @@ nav ul li a:hover{
     border:1px solid #CECECE 
 }
 .banner_img{
-    /* width:50%; */
-    flex:1 1 0%;
     border-radius:8px;
     position:relative;
+    flex: 1 1 0%;
+    max-width: 600px;
+    /* overflow:hidden; */
 }
 .banner_img .dashboard_img{
+    width: 100%;
     padding:10px;
     background-color:white;
     border-radius:8px;
