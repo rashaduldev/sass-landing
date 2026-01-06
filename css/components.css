@@ -1,0 +1,130 @@
+header{
+    position:absolute;
+    width:100%;
+    padding:35px 0;
+}
+.brand_logo img{
+    width:150px;
+    height:30px:
+}
+.header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between
+}
+nav ul{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+nav ul li{
+    list-style:none;
+}
+nav ul li a{
+    /* color:#FF3158; */
+    color: #222222;
+    text-decoration:none;
+}
+nav ul li a:hover{
+    color:#FF3158;
+}
+.nav_btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.banner{
+    padding:180px 0px 80px 0px;
+    background-image:url("../assets/banner_bg.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.banner_content{
+    display:flex;
+    align-items:center;
+    gap:80px;
+    justify-content:space-between;
+    width:100%;
+}
+.banner_content .content{
+    flex:1 1 0%;
+    width:50%;
+}
+.banner_content .content h1{
+    font-size:46px;
+    line-height:56px;
+    font-weight:200;
+}
+.banner_content .content .description{
+    margin-top:20px;
+    font-size:14px;
+    color:#333333;
+    line-height:22px;
+}
+.banner_content .content h1 span{
+    font-weight:900;
+}
+.banner_content .content .email_submit{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    margin:16px 0;
+}
+.banner_content .content input{
+   height:44px;
+   flex: 14; 
+
+}
+.banner_content .content button{
+   height:44px;
+   /* width:30%; */
+   flex: 7; 
+}
+.otherwise{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin:24px 0;
+}
+.otherwise .content{
+    text-align:center;
+    margin:0;
+    white-space:nowrap;
+    font-size:14px;
+    color:#555555;
+}
+.otherwise .left,
+.otherwise .right
+{
+   height:1px;
+   background-color:#CECECE;
+   width:100%;
+}
+.google_login{
+    width:100%;
+    border:1px solid #CECECE 
+}
+.banner_img{
+    /* width:50%; */
+    flex:1 1 0%;
+    border-radius:8px;
+    position:relative;
+}
+.banner_img .dashboard_img{
+    padding:10px;
+    background-color:white;
+    border-radius:8px;
+    box-shadow:0 0 8px rgba(255,49,88,0.3);
+}
+.banner_img .quick_details{
+    position:absolute;
+    top:-35%;
+    right:-15%;
+}
+.banner_img .new_order{
+    position:absolute;
+    right:10%;
+    bottom:-40%;
+}
