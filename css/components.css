@@ -65,9 +65,6 @@ nav ul li a:hover{
     color:var(--secondary-text-color);
     line-height:22px;
 }
-.banner_content .content h1 span{
-    font-weight:900;
-}
 .banner_content .content .email_submit{
     display:flex;
     align-items:center;
@@ -133,3 +130,133 @@ nav ul li a:hover{
     right:10%;
     bottom:-40%;
 }
+
+/* Brand Section  */
+.brand_section{
+    max-width:800px;
+    margin:auto;
+}
+.brand_section .brand_content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:75px;
+}
+.brand_section img{
+    width:135px;
+    height:42px;
+}
+
+/* Task Management Section start */
+.task_content{
+    text-align:center;
+    text-transform: capitalize;
+}
+/* step */
+.step-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    max-width:710px;
+    margin:auto;
+    margin-top:6px;
+    position:relative;
+}
+.step-container::before{
+    content:"";
+    position:absolute;
+    max-width:510px;
+    margin:auto;
+    top:15px;
+    left:0;
+    right:0;
+    width:100%;
+    height:1px;
+    z-index:-1;
+    background-color: var(--border-primary);
+}
+.step{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    flex: 1;
+    position:relative;
+    index:2;
+}
+.circle{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    border:8px solid var(--secondary-color);
+    margin-bottom:8px;
+    background-color:white;
+}
+/* active circle */
+.step.active .circle{
+    border:8px solid var(--primary-color);
+}
+/* content */
+.task_management_content{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    justify-content:center;
+}
+.task_management_content img{
+    width:100%;
+    max-width:670px;
+    height:auto;
+}
+.task_management_text{
+    text-align:left;
+    max-width:370px;
+    margin-left:0;
+}
+/* Task Management Section end */
+
+/* Tools Section start */
+.tools_content{
+    background-image:url("../assets/stack/stack_bg.png");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    gap:40px;
+    justify-content:center;
+}
+.tools_content img{
+    width:100%;
+    max-width:452px;
+    height:auto;
+}
+.tools_text{
+    max-width:337px;
+    text-align:left;
+    margin-left:0;
+}
+/* Tools Section end */
+
+/* growth_section start */
+.growth_section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:90px;
+}
+.growth_section .content{
+    max-width:337px;
+    margin-left:0;
+    text-align:left;
+}
+.growth_section_right{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    text-align:center;
+}
+.growth_section_right .box img{
+    width:60px;
+    height:70px;
+    margin-bottom:16px;
+}
+/* growth_section end */

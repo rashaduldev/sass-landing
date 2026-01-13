@@ -6,8 +6,9 @@
 
 :root{
     --primary-color:#FF3158;
+    --secondary-color:#EEEEEE;
     --primary-text-color:white;
-    --secondary-text-color:#222222;
+    --secondary-text-color:#333333;
     --border-primary:#CECECE;
     --shadow:rgba(255,49,88,0.3);
 }
