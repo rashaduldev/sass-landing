@@ -58,4 +58,69 @@
   .banner_img .new_order {
     display: none;
   }
+  /* brand section */
+  .brand_section .brand_content{
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+}
+/* task management section */
+/* step */
+.step-container{
+  margin-top:40px;
+}
+.step-container::before{
+    max-width:300px;
+}
+.task_management_content{
+    flex-direction:column-reverse;
+    gap:40px;}
+    /* tools_content */
+.tools_content{
+    flex-direction:column;}
+    /* growth_section */
+    .growth_section{
+    flex-direction:column;
+    }
+    .growth_section_right{
+      gap:10px;
+    }
+    .workflow_setting{
+      flex-direction:column-reverse;
+      gap:20px;
+    }
+    .workflow_setting img{
+    width:100%;
+}
+/* identity_section */
+.identity_section{
+    flex-direction:column;
+    gap:40px;}
+    /* footer */
+    .footer_content{
+    flex-direction:column;
+    gap:40px;
+}
+/* testimonial */
+.testimonial_cards{
+  overflow-x:auto;
+  flex-wrap:nowrap;
+  gap:10px;
+}
+.testimonial_cards .card img{
+    border-radius:50%;
+    object-fit:cover;
+}
+/* footer */
+.footer_content p{
+    max-width:100%;
+}
+.footer_content .section_description{
+    max-width:100%;
+    line-height:24px;
+    margin-top:20px;
+}
+.email_info_submit{
+  max-width:100%;
+}
 }

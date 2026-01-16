@@ -241,12 +241,37 @@ nav ul li a:hover{
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:90px;
+    gap:100px;
+    margin-top:60px;
 }
 .growth_section .content{
-    max-width:337px;
+    max-width:377px;
     margin-left:0;
     text-align:left;
+}
+.growth_section_left{
+    display:flex;
+    gap:50px;
+    text-align:left;
+    margin-top:40px;
+}
+.growth_section_left div h3{
+    font-size:32px;
+    font-weight:600;
+    margin-bottom:4px;
+}
+.growth_section_left div p{
+    font-size:12px;
+    color:var(--secondary-text-color);
+}
+.growth_section_left .first h3{
+    color:#FFBB33;
+}
+.growth_section_left .second h3{
+    color:var(--primary-color);
+}
+.growth_section_left .third h3{
+    color:#1E858B;
 }
 .growth_section_right{
     display:grid;
@@ -254,9 +279,165 @@ nav ul li a:hover{
     gap:30px;
     text-align:center;
 }
+.growth_section_right .box{
+    box-shadow:0 0 8px var(--shadow);
+    padding:52px 32px;
+    border-radius:8px;
+}
 .growth_section_right .box img{
     width:60px;
     height:70px;
     margin-bottom:16px;
 }
 /* growth_section end */
+
+/* workflow_setting start */
+.workflow_setting{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    margin-top:60px;
+    background-image:url("../assets/setting/setting_bg.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding:190px 100px;
+} 
+.workflow_setting img{
+    /* width:100%; */
+    max-width:700px;
+    height:342px;
+}
+
+/* workflow_setting end */
+/* identity section started */
+.identity_section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    margin-top:60px;
+}
+.identity_section img{
+    width:100%;
+    max-width:500px;
+    height:auto;
+}
+.identity_section_content{
+    max-width:400px;
+}
+.identity_section_content ul{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+}
+.identity_section_content ul li{
+    font-size:14px;
+    color:var(--secondary-text-color);
+}
+.identity_section_content ul li .icon{
+    color:var(--primary-color);
+    margin-right:8px;
+}
+/* identity section end */
+/* testimonial_section start */
+.testimonial_content{
+    text-align:center;
+    margin:40px 0;
+}
+.testimonial_cards{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    margin-top:40px;
+}
+.testimonial_cards .card{
+    background-color:white;
+    box-shadow:0 0 8px var(--shadow);
+    border-radius:8px;
+    padding:30px 20px;
+    max-width:300px;
+    text-align:center;
+}
+.testimonial_cards .card img{
+    border-radius:50%;
+    object-fit:cover;
+}
+.testimonial_section{
+    text-align:center;
+}
+.testimonial_section a{
+    margin-top:40px;
+    display:inline-block;
+    /* margin:auto; */
+}
+/* testimonial_section end */
+/* footer section start */
+.footer_section{
+    background-image:url("../assets/footer.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding:105px 0 40px 0;
+}
+.footer_section .container .head{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    gap:20px;
+}
+.footer_section .container .head h2{
+    max-width:558px;
+    margin:auto;
+}
+.footer_section .container .head a{
+    width:fit-content;
+    margin:auto;
+}
+.footer_content{
+    display:flex;
+    justify-content:space-between;
+    margin-top:60px;
+    border-top:1px solid var(--border-primary);
+    border-bottom:1px solid var(--border-primary);
+    padding:60px 0;
+}
+.footer_content .section_description{
+    max-width:300px;
+    line-height:24px;
+    margin-top:20px;
+}
+.email_info_submit{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.email_info_submit input{
+    border-radius:6px 0 0 6px;
+}
+.email_info_submit button{
+    border-radius:0 6px 6px 0;
+}
+.footer_links{
+    display:flex;
+    gap:80px;
+}
+#footer_email{
+    display:flex;
+}
+.copyright{
+    text-align:center;
+    margin-top:40px;
+    font-size:14px;
+    color:var(--secondary-text-color);
+}
+.copyright a{
+    color:var(--primary-color);
+}
+.copyright a:hover{
+    text-decoration:underline;
+}
+/* footer section end */

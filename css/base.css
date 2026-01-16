@@ -16,4 +16,8 @@
 
 a{
     text-decoration:none;
+    color: var(--secondary-text-color);
+}
+ul{
+    list-style:none;
 }
