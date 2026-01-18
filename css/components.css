@@ -215,6 +215,11 @@ nav ul li a:hover{
     max-width:370px;
     margin-left:0;
 }
+.task_management_text a{
+    margin-top:20px;
+    display:inline-block;
+    text-align: center;
+}
 /* Task Management Section end */
 
 /* Tools Section start */

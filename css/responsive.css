@@ -1,193 +1,194 @@
-/* mobile responsive : up 600px */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .container {
-    max-width: 1220px;
-    padding: 0 16px;
-  }
-    .container {
-        max-width: 100%;
-        padding: 0 12px;
-    }
-    .section {
-        margin-top: 40px;
-    }
-    .section_description {
-        max-width: 100% !important;
-        text-align: center;
-    }
+  max-width: 100%;
+  padding: 0 12px;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section_description {
+  max-width: 100%;
+  text-align: center;
+}
+h1 .h1{
+    font-size:2px !important;
+    text-align:center;
+}
+.banner_content .content {
+  width: 100%;
+}
+.banner_content .content h1{
+    font-size:28px;
+    text-align:center;
+    line-height:34px;
+}
+.h2 , h2{
+    font-size:28px;
+    text-align:center;
+}
+
+.nav_btn {
+  display: none;
+}
+
+nav ul {
+  display: none;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 2px;
+  background: black;
+  transition: all 0.3s ease;
+}
+
+.nav_menu {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 150px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px var(--shadow);
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* hamburger animation */
+#menu-toggle:checked ~ .nav_menu {
+  display: flex;
+}
+
+#menu-toggle:checked ~ .hamburger .middle {
+  opacity: 0;
+}
+
+#menu-toggle:checked ~ .hamburger .top {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle:checked ~ .hamburger .bottom {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* common column layout */
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
   .brand_logo img {
     width: 100px;
-    height: 20px;
   }
-  nav ul {
-    display: none;
+
+  .banner {
+    padding: 140px 0 80px;
   }
-  .nav_menu{
-    display:absolute;
-    top:60px;
-    right:20px;
-    background-color:white;
-    box-shadow:0 0 8px var(--shadow);
-    border-radius:8px;
-    flex-direction:column;
-    width:150px;
-    padding:10px;
+
+  .banner_content,
+  .brand_section .brand_content,
+  .task_management_content,
+  .tools_content,
+  .workflow_setting,
+  .growth_section,
+  .identity_section,
+  .footer_content {
+    flex-direction: column;
+    text-align: center;
+  }
+   .growth_section_right{
     gap:10px;
   }
-.hamburger {
-    display: flex;
-    flex-direction:column;
-    gap:5px;
-    cursor:pointer;
+  .workflow_setting img{
+    max-width:100%;
+    height:auto;
   }
-   #menu-toggle:checked ~ .nav_menu {
+  .task_management_text{
+    text-align:center;
+}
+.task_management_text a{
+    align-items:center;
+    display:inline-block;
+    margin: 20px auto 0 auto;
+}
+  .testimonial_cards {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  footer {
+    padding: 0 20px;
+    text-align: center;
+  }
+  .footer_content{
+    gap:30px;
+  }
+  .footer_links{
+    justify-content:center;
+  }
+  .footer_content .email_info_submit{
+    align-items:center;
+  }
+}
+/*  */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  .container {
+    padding: 0 24px;
+  }
+
+  .section {
+    margin-top: 60px;
+  }
+
+  nav ul {
     display: flex;
+    gap: 20px;
   }
 
   .hamburger {
-    display: block;
+    display: none;
   }
 
   .nav_btn {
-    display: none;
-  }
-  .hamburger .top,
-  .hamburger .middle,
-  .hamburger .bottom{
-    height:2px;
-    background-color:black;
-    width:30px;
-  }
-  .nav_btn {
-    display: none;
-  }
-  .banner {
-    padding: 140px 0px 80px 0px;
-  }
-  .banner_content {
     display: flex;
+    gap: 10px;
+  }
+
+  .banner_content,
+  .task_management_content,
+  .tools_content,
+  .growth_section,
+  .identity_section {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  .banner_content .content {
-    flex: 1 1 0%;
-    width: 100%;
+ .brand_section .brand_content {
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
   }
-  .banner_content .content h1 {
-    font-size: 26px;
-    line-height: 36px;
-    font-weight: 200;
+  .testimonial_cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
-  .banner_content .content .description {
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: 22px;
+
+  footer {
+    padding: 0 30px;
   }
-  .banner_content .content input {
-    height: 44px;
-    flex: 8;
-  }
-  .banner_img .quick_details {
-    display: none;
-  }
-  .banner_img .new_order {
-    display: none;
-  }
-  /* brand section */
-  .brand_section .brand_content{
-    flex-direction:column;
-    align-items:center;
-    gap:24px;
-}
-/* task management section */
-/* step */
-.step-container{
-  margin-top:40px;
-}
-.step-container::before{
-    max-width:300px;
-}
-.task_management_content{
-    flex-direction:column-reverse;
-    gap:40px;}
-    .task_management_text{
-      max-width:100%;
-    text-align:center;
-    }
-    /* tools_content */
-.tools_content{
-    flex-direction:column;}
-    .tools_text{
-      max-width:100%;
-    text-align:center;
-    }
-    /* growth_section */
-    .growth_section{
-    flex-direction:column;
-    }
-    .growth_section .content{
-      max-width:100%;
-      text-align:center;
-    }
-    .growth_section_left{
-      text-align:center;
-      justify-content:center;
-    }
-    .growth_section_right{
-      gap:10px;
-    }
-    .workflow_setting{
-      flex-direction:column-reverse;
-      gap:20px;
-    }
-    .workflow_setting img{
-    width:100%;
-}
-.workflow_content h2{
-  text-align:center;
-}
-/* identity_section */
-.identity_section{
-    flex-direction:column;
-    gap:40px;}
-    .identity_section_content{
-      max-width:100%;
-      text-align:center;
-    }
-    /* footer */
-    .footer_content{
-    flex-direction:column;
-    gap:40px;
-}
-/* testimonial */
-.testimonial_cards{
-  overflow-x:auto;
-  flex-wrap:nowrap;
-  gap:10px;
-}
-.testimonial_cards .card img{
-    border-radius:50%;
-    object-fit:cover;
-}
-/* footer */
-footer{
-    text-align:center;
-    padding:0 20px;
-}
-.footer_content p{
-    max-width:100%;
-    text-align:center;
-}
-.footer_content .section_description{
-    max-width:100%;
-    line-height:24px;
-    margin-top:20px;
-}
-.footer_links{
-  justify-content:center;
-}
-.email_info_submit{
-  max-width:100%;
-}
-.email_info_submit input{
-    width:100%;}
 }
